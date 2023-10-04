@@ -1,18 +1,12 @@
-# Input string
-input_string = "Welcome to Python world"
+Str = "Welcome to python"
+c = 0
 
-# Count the number of alphabets
-num_alphabets = sum(1 for char in input_string if char.isalpha())
+for i in Str:
+    if i.isalpha():
+        c += 1
 
-# Extract characters in a specific range
-start_index = 3
-end_index = 10
-extracted_characters = input_string[start_index:end_index]
+print("Number of alphabets in the string:", c)
+print(Str[5:12])
 
-# Check if the string is alphanumeric
-is_alphanumeric = input_string.isalnum()
-
-# Print the results
-print("Number of alphabets:", num_alphabets)
-print("Extracted characters:", extracted_characters)
-print("Is alphanumeric:", is_alphanumeric)
+Alpha = Str.isalnum()
+print("It is Alphanumeric" if Alpha else "It is not Alphanumeric")
