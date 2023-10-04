@@ -1,0 +1,11 @@
+str='Elon is Rich Guy'
+stripthestring=str.strip()
+print(stripthestring)
+splitthestring =str.split(",")
+print(splitthestring)
+replaceastring=str.replace("is", "a")
+print(replaceastring)
+findtheword=str.find("rich")
+print(findtheword)
+print(str.startswith('Elon'))
+print(str.endswith("guy"))
